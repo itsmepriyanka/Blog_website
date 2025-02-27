@@ -1,13 +1,8 @@
 const Login = () => {
   return (
-    <div className="flex h-screen">
+    <div className="flex box shadow-md ">
       {/* Left Section - Image & Slogan */}
-      <div className="image md:flex w-1/2 bg-blue-600 text-white flex-col justify-center items-center p-8">
-        <img
-          src="https://source.unsplash.com/600x400/?nature,writing"
-          alt="Background"
-          className="w-full h-3/4 object-cover rounded-lg shadow-md"
-        />
+      <div className="image md:flex w-1/2 bg-blue-600 text-white flex-col justify-center items-center p-8 bg-cover bg-center bg-no-repeat">
         <h1 className="text-3xl font-bold mt-6 text-center">
           Your Space for Thoughts and Stories
         </h1>
@@ -15,9 +10,9 @@ const Login = () => {
 
       {/* Right Section - Login Form */}
       <div className="w-full md:w-1/2 flex justify-center items-center p-8">
-        <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold text-center text-gray-700 mb-6">
-            Welcome Back
+        <div className="w-full max-w-md bg-white p-1 ">
+          <h2 className="text-2xl font-semibold text-center text-gray-500 mb-6">
+            Login
           </h2>
           <form>
             <div className="mb-4">

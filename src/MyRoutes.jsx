@@ -1,6 +1,3 @@
-import React from "react";
-
-import Header from "./layout/Header";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
