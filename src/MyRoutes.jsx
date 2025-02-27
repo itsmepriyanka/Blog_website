@@ -6,6 +6,7 @@ import About from "./pages/About";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layout/Layout";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const MyRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const MyRoutes = () => {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/about" element={<About />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
           </Route>
         </Routes>
       </Router>

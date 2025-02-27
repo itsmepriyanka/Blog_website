@@ -12,4 +12,19 @@
             rgba(30, 30, 30, 0.5)
           ), url('https://plus.unsplash.com/premium_photo-1661265944044-bc7248ae54f9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmxvZyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D');
     background-color: black;
+}
+@media (max-width: 767px) {
+    .image {
+      font-size: 14px;
+      width: 70%;
+      margin: auto;
+    }    
+    button {
+      font-size: 14px;
     }
+    .box{
+        height: fit-content;
+    }
+
+  }
+
