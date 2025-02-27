@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { FaBars, FaFacebook, FaInstagramSquare } from "react-icons/fa";
-import { FaSquareXTwitter, FaXmark } from "react-icons/fa6";
+import{ useState } from "react";
+import { FaBars, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaXTwitter, FaXmark } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -26,7 +26,7 @@ const Header = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold" : "text-white"
+                isActive ? "text-orange-400 font-bold underline" : "text-white"
               }
             >
               Home
@@ -36,7 +36,7 @@ const Header = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold" : "text-white"
+                isActive ? "text-orange-400 font-bold underline" : "text-white"
               }
             >
               About
@@ -46,7 +46,7 @@ const Header = () => {
             <NavLink
               to="/services"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold" : "text-white"
+                isActive ? "text-orange-400 font-bold underline" : "text-white"
               }
             >
               Services
@@ -56,7 +56,7 @@ const Header = () => {
             <NavLink
               to="/blogs"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold" : "text-white"
+                isActive ? "text-orange-400 font-bold underline" : "text-white"
               }
             >
               Blogs
@@ -66,7 +66,7 @@ const Header = () => {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold" : "text-white"
+                isActive ? "text-orange-400 font-bold underline" : "text-white"
               }
             >
               Contact
@@ -76,15 +76,21 @@ const Header = () => {
 
         {/* menu icons */}
         <div className="text-white lg:flex gap-4 items-center hidden ">
-          <a href="/" className="hover:text-orange-500">
-            <FaFacebook />
+          <a href="/" className="hover:text-orange-500 hover:">
+            <FaFacebookF />
           </a>
           <a href="/" className="hover:text-orange-500">
-            <FaInstagramSquare />
+            <FaInstagram />
           </a>
           <a href="/" className="hover:text-orange-500">
-            <FaSquareXTwitter />
+            <FaXTwitter />
           </a>
+          <button className="btn border-2 font-bold bg-white text-blue-500 hover:bg-orange-400 hover:text-white px-3 py-1 rounded-xl">
+            Login
+          </button>
+          <button className="btn border-2 font-bold bg-white text-blue-500 hover:bg-orange-400 hover:text-white px-3 py-1 rounded-xl">
+            Signup
+          </button>
         </div>
 
         {/* mobile menu btn, display mobile screen */}
@@ -112,7 +118,7 @@ const Header = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold" : "text-black"
+                isActive ? "text-orange-400 font-bold underline" : "text-black"
               }
             >
               Home
@@ -122,7 +128,7 @@ const Header = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold" : "text-black"
+                isActive ? "text-orange-400 font-bold underline" : "text-black"
               }
             >
               About
@@ -132,7 +138,7 @@ const Header = () => {
             <NavLink
               to="/services"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold" : "text-black"
+                isActive ? "text-orange-400 font-bold underline" : "text-black"
               }
             >
               Services
@@ -142,7 +148,7 @@ const Header = () => {
             <NavLink
               to="/blogs"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold" : "text-black"
+                isActive ? "text-orange-400 font-bold underline" : "text-black"
               }
             >
               Blogs
@@ -152,10 +158,20 @@ const Header = () => {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold" : "text-black"
+                isActive ? "text-orange-400 font-bold underline" : "text-black"
               }
             >
               Contact
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/login" className="">
+              <button className="btn border-2 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-white px-3 py-1 rounded-xl mr-10">
+                Login
+              </button>
+              <button className="btn border-2 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-white px-3 py-1 rounded-xl mr-10">
+                Signup
+              </button>
             </NavLink>
           </li>
         </ul>
