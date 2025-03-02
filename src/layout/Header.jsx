@@ -12,11 +12,11 @@ const Header = () => {
 
   // navitems
   return (
-    <header className="bg-blue-500 text-white fixed top-0 left-0 right-0">
+    <header className="color text-white fixed top-0 left-0 right-0">
       <nav className="px-4 py-4 max-w-7xl flex mx-auto justify-between items-center">
         <a href="/" className="text-xl font-bold text-black">
           Blog
-          <span className="text-orange-400">Sphere</span>
+          <span className="secColor">Sphere</span>
         </a>
 
         {/* navritems for lg devices */}
@@ -26,7 +26,7 @@ const Header = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold underline" : "text-white"
+                isActive ? "secColor font-bold underline" : "text-white"
               }
             >
               Home
@@ -36,7 +36,7 @@ const Header = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold underline" : "text-white"
+                isActive ? "secColor font-bold underline" : "text-white"
               }
             >
               About
@@ -46,7 +46,7 @@ const Header = () => {
             <NavLink
               to="/services"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold underline" : "text-white"
+                isActive ? "secColor font-bold underline" : "text-white"
               }
             >
               Services
@@ -56,7 +56,7 @@ const Header = () => {
             <NavLink
               to="/blogs"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold underline" : "text-white"
+                isActive ? "secColor font-bold underline" : "text-white"
               }
             >
               Blogs
@@ -66,7 +66,7 @@ const Header = () => {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold underline" : "text-white"
+                isActive ? "secColor font-bold underline" : "text-white"
               }
             >
               Contact
@@ -76,22 +76,22 @@ const Header = () => {
 
         {/* menu icons */}
         <div className="text-white lg:flex gap-4 items-center hidden ">
-          <a href="/" className="hover:text-orange-500 hover:">
+          <a href="/" className="hover:text-purple-500 hover:">
             <FaFacebookF />
           </a>
-          <a href="/" className="hover:text-orange-500">
+          <a href="/" className="hover:text-purple-500">
             <FaInstagram />
           </a>
-          <a href="/" className="hover:text-orange-500">
+          <a href="/" className="hover:text-purple-500">
             <FaXTwitter />
           </a>
           <NavLink to="/login">
-            <button className="btn border-2 font-bold bg-white text-blue-500 hover:bg-orange-400 hover:text-white px-3 py-1 rounded-xl">
+            <button className="btn border-2 font-bold bg-white text-purple-600 hover:bg-purple-500 hover:text-white px-3 py-1 rounded-xl">
               Login
             </button>
           </NavLink>
           <NavLink to="/register">
-            <button className="btn border-2 font-bold bg-white text-blue-500 hover:bg-orange-400 hover:text-white px-3 py-1 rounded-xl">
+            <button className="btn border-2 font-bold bg-white text-purple-600 hover:bg-purple-500 hover:text-white px-3 py-1 rounded-xl">
               Signup
             </button>
           </NavLink>
@@ -122,7 +122,7 @@ const Header = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold underline" : "text-black"
+                isActive ? "secColor font-bold underline" : "text-black"
               }
             >
               Home
@@ -132,7 +132,7 @@ const Header = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold underline" : "text-black"
+                isActive ? "secColor font-bold underline" : "text-black"
               }
             >
               About
@@ -142,7 +142,7 @@ const Header = () => {
             <NavLink
               to="/services"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold underline" : "text-black"
+                isActive ? "secColor font-bold underline" : "text-black"
               }
             >
               Services
@@ -152,7 +152,7 @@ const Header = () => {
             <NavLink
               to="/blogs"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold underline" : "text-black"
+                isActive ? "secColor font-bold underline" : "text-black"
               }
             >
               Blogs
@@ -162,7 +162,7 @@ const Header = () => {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                isActive ? "text-orange-400 font-bold underline" : "text-black"
+                isActive ? "secColor font-bold underline" : "text-black"
               }
             >
               Contact
@@ -170,10 +170,10 @@ const Header = () => {
           </li>
           <li>
             <NavLink to="/login" className="">
-              <button className="btn border-2 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-white px-3 py-1 rounded-xl mr-10">
+              <button className="btn border-2 border-purple-500 secColor hover:bg-purple-500 hover:text-white px-3 py-1 rounded-xl mr-10">
                 Login
               </button>
-              <button className="btn border-2 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-white px-3 py-1 rounded-xl mr-10">
+              <button className="btn border-2 border-purple-500 secColor hover:bg-purple-500 hover:text-white px-3 py-1 rounded-xl mr-10">
                 Signup
               </button>
             </NavLink>
