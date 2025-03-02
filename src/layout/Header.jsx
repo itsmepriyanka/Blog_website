@@ -26,7 +26,11 @@ const Header = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? "secColor font-bold underline" : "text-white"
+                isActive
+                  ? "secColor font-bold underline scale-105 transition-transform duration-200"
+                  : `relative text-white hover:text-purple-400 duration-200 
+                    content-[''] block after:w-0 after:h-[1px] after:bg-purple-500 
+                    after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300`
               }
             >
               Home
@@ -36,7 +40,11 @@ const Header = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                isActive ? "secColor font-bold underline" : "text-white"
+                isActive
+                  ? "secColor font-bold underline"
+                  : `relative text-white hover:text-purple-400 duration-200 
+              content-[''] block after:w-0 after:h-[1px] after:bg-purple-500 
+              after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300`
               }
             >
               About
@@ -46,7 +54,11 @@ const Header = () => {
             <NavLink
               to="/services"
               className={({ isActive }) =>
-                isActive ? "secColor font-bold underline" : "text-white"
+                isActive
+                  ? "secColor font-bold underline"
+                  : `relative text-white hover:text-purple-400 duration-200 
+                    content-[''] block after:w-0 after:h-[1px] after:bg-purple-500 
+                    after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300`
               }
             >
               Services
@@ -56,7 +68,11 @@ const Header = () => {
             <NavLink
               to="/blogs"
               className={({ isActive }) =>
-                isActive ? "secColor font-bold underline" : "text-white"
+                isActive
+                  ? "secColor font-bold underline"
+                  : `relative text-white hover:text-purple-400 duration-200 
+                    content-[''] block after:w-0 after:h-[1px] after:bg-purple-500 
+                    after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300`
               }
             >
               Blogs
@@ -66,7 +82,11 @@ const Header = () => {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                isActive ? "secColor font-bold underline" : "text-white"
+                isActive
+                  ? "secColor font-bold underline"
+                  : `relative text-white hover:text-purple-400 duration-200 
+                    content-[''] block after:w-0 after:h-[1px] after:bg-purple-500 
+                    after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300`
               }
             >
               Contact
