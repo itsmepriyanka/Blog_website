@@ -7,6 +7,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layout/Layout";
 import Login from "./pages/Login";
 
+
 const MyRoutes = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const MyRoutes = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<Home />} />
+            
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blogs" element={<Blogs />} />

@@ -85,12 +85,12 @@ const Header = () => {
           <a href="/" className="hover:text-orange-500">
             <FaXTwitter />
           </a>
-          <button className="btn border-2 font-bold bg-white text-blue-500 hover:bg-orange-400 hover:text-white px-3 py-1 rounded-xl">
+          <NavLink to='/login'><button className="btn border-2 font-bold bg-white text-blue-500 hover:bg-orange-400 hover:text-white px-3 py-1 rounded-xl">
             Login
-          </button>
-          <button className="btn border-2 font-bold bg-white text-blue-500 hover:bg-orange-400 hover:text-white px-3 py-1 rounded-xl">
+          </button></NavLink>
+          <NavLink to='/register'><button className="btn border-2 font-bold bg-white text-blue-500 hover:bg-orange-400 hover:text-white px-3 py-1 rounded-xl">
             Signup
-          </button>
+          </button></NavLink>
         </div>
 
         {/* mobile menu btn, display mobile screen */}
