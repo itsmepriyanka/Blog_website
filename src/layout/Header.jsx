@@ -105,6 +105,7 @@ const Header = () => {
           <a href="/" className="hover:text-purple-500">
             <FaXTwitter />
           </a>
+
           <NavLink to="/login">
             <button className="btn border-2 font-bold bg-white text-purple-600 hover:bg-purple-500 hover:text-white px-3 py-1 rounded-xl">
               Login
