@@ -1,7 +1,6 @@
 const Login = () => {
   return (
     <div className="flex box flex-col md:flex-row  shadow-md ">
-=======
       {/* Left Section - Image & Slogan */}
       <div className="image md:flex w-1/2 bg-blue-600 text-white flex-col justify-center items-center p-8 bg-cover bg-center bg-no-repeat">
         <h1 className="text-3xl font-bold mt-6 text-center">
@@ -47,7 +46,7 @@ const Login = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200"
+              className="w-full color text-white py-2 rounded-lg hover:bg-purple-500  transition duration-200"
             >
               Login
             </button>
