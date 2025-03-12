@@ -1,92 +1,34 @@
-// const About = () => {
-//   return (
-//     <>
-//       <div className="py-24 color mx-auto ">
-//         <div className="text-white text-center">
-//           <h1 className="text-5xl lg:text-7xl ledding-snug font-bold mb-5">
-//             {" "}
-//             About Us Page
-//           </h1>
-//         </div>
-//       </div>
-//       <div className="first_content flex justify-around my-10 mx-16">
-//         <div className="image w-1/2 rounded-lg shadow-lg">
-//           <img
-//             src="/chat.jpg"
-//             alt="Chat Image"
-//             className="shadow-2xl rounded-lg transition-all duration-300 hover:shadow-[0px_10px_30px_rgba(0,0,0,0.3)]"
-//             width="100%"
-//           />
-//         </div>
-//         <div className="whoAreWe w-1/2 px-16 py-10">
-//           <div className="text-purple-500 font-bold mb-7 text-xs  ">
-//             WHO ARE WE
-//           </div>
-//           <div className=" font-bold mb-7">
-//             We Provide High Quality Articles & Blogs
-//           </div>
-//           <div>
-//             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias,
-//             quod ut. Quos ab praesentium quidem eveniet iste libero natus alias
-//             inventore nisi, aliquid suscipit animi illo quo voluptatibus est
-//             neque, possimus accusantium soluta dolorem rem blanditiis voluptate
-//             deserunt fugiat. At in culpa nobis sequi rem reprehenderit voluptas
-//             maxime ipsa molestiae.
-//           </div>
-//           <div className="mt-7">
-//             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias,
-//             quod ut. Quos ab praesentium quidem eveniet iste libero natus alias
-//             inventore nisi, aliquid suscipit animi illo quo voluptatibus est
-//             neque, possimus accusantium soluta dolorem rem blanditiis voluptate
-//             deserunt fugiat. At in culpa nobis sequi rem reprehenderit voluptas
-//             maxime ipsa molestiae.
-//           </div>
-//         </div>
-//       </div>
-//       <div className="text-2xl font-bold mt-20 text-center w-full">
-//         TOP AUTHORS
-//       </div>
-//       <div className="gallery">
-//         <div className="box1 box">
-//           <img src="/chat.jpg" alt="" width="100%" height="100%" />
-//           <div className="">
-//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-//             dolores!
-//           </div>
-//         </div>
-//         <div className="box2 box">
-//           <img src="/chat.jpg" alt="" width="100%" height="100%" />
-//           <div className="">
-//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-//             dolores!
-//           </div>
-//         </div>
-//         <div className="box3 box">
-//           <img src="/chat.jpg" alt="" width="100%" height="100%" />
-//           <div className="">
-//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-//             dolores!
-//           </div>
-//         </div>
-//         <div className="box4 box">
-//           <img src="/chat.jpg" alt="" width="100%" height="100%" />
-//           <div className="">
-//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-//             dolores!
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default About;
-
 const About = () => {
+  const authorData = [
+    {
+      src: "person1.jpg",
+      name: "william Frank",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolores!",
+    },
+    {
+      src: "person2.jpg",
+      name: "Maria D'Suza",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolores!",
+    },
+    {
+      src: "person4.jpg",
+      name: "John shakespere",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolores!",
+    },
+    {
+      src: "person3.jpg ",
+      name: "Jane Austen ",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolores!",
+    },
+  ];
   return (
     <>
       {/* Hero Section */}
-      <div className="py-24 mx-auto bg-gray-900 text-white text-center">
+      <div className="py-24 mx-auto color text-white text-center">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-snug mb-5">
           About Us Page
         </h1>
@@ -134,19 +76,15 @@ const About = () => {
 
       {/* Gallery Section */}
       <div className="gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 px-4 md:px-16 mt-10">
-        {[...Array(4)].map((_, index) => (
+        {authorData.map((image, index) => (
           <div
             key={index}
             className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300"
           >
-            <img
-              src="/chat.jpg"
-              alt="Author"
-              className="w-full h-40 object-cover"
-            />
+            <img src={image.src} alt="Author" className="w-full h-50" />
             <div className="p-4 text-gray-700 text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-              dolores!
+              <p className="font-bold italic">{image.name}</p>
+              <p>{image.content}</p>
             </div>
           </div>
         ))}
