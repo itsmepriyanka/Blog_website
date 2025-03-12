@@ -47,10 +47,10 @@ const About = () => {
 
         {/* Text Section */}
         <div className="w-full lg:w-1/2 px-4 md:px-8 lg:px-16 py-10 text-center lg:text-left">
-          <div className="text-purple-500 font-bold mb-4 text-sm">
+          <div className="text-purple-400 font-bold mb-4 text-sm">
             WHO ARE WE
           </div>
-          <h2 className="text-xl md:text-2xl font-bold mb-5">
+          <h2 className="text-xl md:text-2xl  mb-5">
             We Provide High Quality Articles & Blogs
           </h2>
           <p className="text-gray-700 dark:text-gray-300">
