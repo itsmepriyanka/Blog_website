@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="color py-8 mt-20 ">
+    <footer className="color py-8 mt-20 z-50">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand Info */}
         <div>
@@ -31,7 +31,10 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/services" className="hover:text-purple-500 text-white">
+                <a
+                  href="/services"
+                  className="hover:text-purple-500 text-white"
+                >
                   Service
                 </a>
               </li>

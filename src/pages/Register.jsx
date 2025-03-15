@@ -4,7 +4,7 @@ const Register = () => {
       {/* Left Section - Image & Slogan */}
       <div className="image md:flex w-1/2 bg-blue-600 text-white flex-col justify-center items-center p-8 bg-cover bg-center bg-no-repeat">
         <h1 className="text-3xl font-bold mt-6 text-center">
-          Your Space for Thoughts and Stories
+          Your Space For Thoughts And Stories
         </h1>
       </div>
 

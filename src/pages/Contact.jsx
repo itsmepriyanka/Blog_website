@@ -45,9 +45,15 @@ const Contact = () => {
             {/* Social Media */}
             <div className=" flex flex-col items-center">
               <div className="flex items-center justify-center space-x-4">
-                <FaFacebook className="text-6xl cursor-pointer" />
-                <FaInstagram className="text-6xl cursor-pointer" />
-                <FaXTwitter className="text-6xl cursor-pointer" />
+                <a href="https://www.facebook.com/">
+                  <FaFacebook className="text-6xl cursor-pointer" />
+                </a>
+                <a href="https://www.instagram.com/">
+                  <FaInstagram className="text-6xl cursor-pointer" />
+                </a>
+                <a href="https://www.twitter.com/">
+                  <FaXTwitter className="text-6xl cursor-pointer" />
+                </a>
               </div>
               <p className="mt-4 text-md">Social Media</p>
             </div>

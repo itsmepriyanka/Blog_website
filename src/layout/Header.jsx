@@ -12,7 +12,7 @@ const Header = () => {
 
   // navitems
   return (
-    <header className="color text-white fixed top-0 left-0 right-0">
+    <header className="color text-white fixed top-0 left-0 right-0 z-50">
       <nav className="px-4 py-4 max-w-7xl flex mx-auto justify-between items-center">
         <a href="/" className="text-xl font-bold text-black">
           Blog
