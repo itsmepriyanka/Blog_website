@@ -96,13 +96,19 @@ const Header = () => {
 
         {/* menu icons */}
         <div className="text-white lg:flex gap-4 items-center hidden ">
-          <a href="/" className="hover:text-purple-500 hover:">
+          <a
+            href="https://www.facebook.com/"
+            className="hover:text-purple-500 hover:"
+          >
             <FaFacebookF />
           </a>
-          <a href="/" className="hover:text-purple-500">
+          <a
+            href="https://www.instagram.com/"
+            className="hover:text-purple-500"
+          >
             <FaInstagram />
           </a>
-          <a href="/" className="hover:text-purple-500">
+          <a href="https://www.twitter.com/" className="hover:text-purple-500">
             <FaXTwitter />
           </a>
 
