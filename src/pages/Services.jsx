@@ -24,26 +24,8 @@ const Services = () => {
       title: "Monetization Consultation",
       description: "Learn how to monetize your blog using ads, affiliates, and sponsorships.",
       icon: "/images/moneybag.png"     
-    },
-   
-    {
-      title: "Guest Posting",
-      description:
-        "Expand your reach by getting published on high-authority blogs and websites.",
-      icon: "🌍",
-    },
-    {
-      title: "Social Media Marketing",
-      description:
-        "Promote your blogs on various platforms to increase traffic and engagement.",
-      icon: "📢",
-    },
-    {
-      title: "Monetization Consultation",
-      description:
-        "Learn how to monetize your blog using ads, affiliates, and sponsorships.",
-      icon: "💰",
-    },
+    }, 
+    
   ];
 
   return (

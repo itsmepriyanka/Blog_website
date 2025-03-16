@@ -12,7 +12,7 @@ const Contact = () => {
     <>
       <div className=" py-22 color mx-auto ">
         <div className="text-white text-center">
-          <h1 className="text-5xl lg:text-7xl font-bold mb-4"> Contact Us</h1>
+          <h1 className="text-5xl lg:text-7xl font-bold mb-4"> Contact Us </h1>
         </div>
       </div>
       <div className="flex flex-col md:flex-row py-16 px-16 sm:px-26 gap-8 sm:gap-16 items-center justify-center transition-all duration-500">
@@ -46,13 +46,13 @@ const Contact = () => {
             <div className=" flex flex-col items-center">
               <div className="flex items-center justify-center space-x-4">
                 <a href="https://www.facebook.com/">
-                  <FaFacebook className="text-6xl cursor-pointer" />
+                  <FaFacebook className="text-5xl cursor-pointer" />
                 </a>
                 <a href="https://www.instagram.com/">
-                  <FaInstagram className="text-6xl cursor-pointer" />
+                  <FaInstagram className="text-5xl cursor-pointer" />
                 </a>
                 <a href="https://www.twitter.com/">
-                  <FaXTwitter className="text-6xl cursor-pointer" />
+                  <FaXTwitter className="text-5xl cursor-pointer" />
                 </a>
               </div>
               <p className="mt-4 text-md">Social Media</p>
@@ -63,7 +63,7 @@ const Contact = () => {
         {/* contact form section */}
         <div className="w-full md:w-1/2 h-[600px] bg-purple-100 transition-all duration-500 shadow-2xl">
           <div className="h-16 color text-white text-center font-bold pt-4 text-2xl">
-            Contact Us
+          Your Queries Here
           </div>
           <form className="p-8">
             {/* First & Last Name */}
