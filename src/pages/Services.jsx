@@ -4,27 +4,27 @@ const Services = () => {
     {
       title: "Content Writing",
       description: "We provide high-quality blog and article writing services to engage your audience.",
-      icon: "✍️",
+      icon: "/images/handwriting.png"
     },
     {
       title: "SEO Optimization",
       description: "Improve your site's ranking with keyword research, on-page SEO, and best practices.",
-      icon: "📈",
+      icon: "/images/content-writing.png"
     },
     {
       title: "Guest Posting",
       description: "Expand your reach by getting published on high-authority blogs and websites.",
-      icon: "🌍",
+      icon: "/images/earth.png"
     },
     {
       title: "Social Media Marketing",
       description: "Promote your blogs on various platforms to increase traffic and engagement.",
-      icon: "📢",
+      icon:"/images/loudspeaker.png"
     },
     {
       title: "Monetization Consultation",
       description: "Learn how to monetize your blog using ads, affiliates, and sponsorships.",
-      icon: "💰",
+      icon: "/images/moneybag.png"
     },
   ];
 
@@ -53,7 +53,8 @@ const Services = () => {
             key={index}
             className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            <div className="text-4xl">{service.icon}</div>
+             <img src={service.icon} alt={service.title} className="w-16 h-16  mb-4" />
+            {/* <div className="text-4xl">{service.icon}</div> */}
             <h2 className="text-xl font-semibold mt-4 text-gray-800">{service.title}</h2>
             <p className="text-gray-600 mt-2">{service.description}</p>
           </div>
