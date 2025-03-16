@@ -12,7 +12,7 @@ const Header = () => {
 
   // navitems
   return (
-    <header className="color text-white fixed top-0 left-0 right-0">
+    <header className="color text-white fixed top-0 left-0 right-0 z-50">
       <nav className="px-4 py-4 max-w-7xl flex mx-auto justify-between items-center">
         <a href="/" className="text-xl font-bold text-black">
           Blog
@@ -96,13 +96,19 @@ const Header = () => {
 
         {/* menu icons */}
         <div className="text-white lg:flex gap-4 items-center hidden ">
-          <a href="/" className="hover:text-purple-500 hover:">
+          <a
+            href="https://www.facebook.com/"
+            className="hover:text-purple-500 hover:"
+          >
             <FaFacebookF />
           </a>
-          <a href="/" className="hover:text-purple-500">
+          <a
+            href="https://www.instagram.com/"
+            className="hover:text-purple-500"
+          >
             <FaInstagram />
           </a>
-          <a href="/" className="hover:text-purple-500">
+          <a href="https://www.twitter.com/" className="hover:text-purple-500">
             <FaXTwitter />
           </a>
 

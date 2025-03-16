@@ -1,14 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Blogs = () => {
   return (
-    <div className=' py-40 color mx-auto '>
-        <div className='text-white text-center'>
-            <h1 className='text-5xl lg:text-7xl ledding-snug font-bold mb-5'> Blog Page</h1>
-            
-        </div>
+    <div className=" py-22 color mx-auto ">
+      <div className="text-white text-center">
+        <h1 className="text-5xl lg:text-7xl font-bold mb-4"> Blog</h1>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Blogs
+export default Blogs;

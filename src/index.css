@@ -30,9 +30,9 @@
     .box{
         height: fit-content;
     }
+    
 
   }
-
   
 .color{
  background: #2C3E50;
@@ -65,3 +65,4 @@ color: #8E44AD;
   margin: auto;
   object-fit: cover; 
 } */
+

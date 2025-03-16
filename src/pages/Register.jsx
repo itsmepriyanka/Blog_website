@@ -4,7 +4,7 @@ const Register = () => {
       {/* Left Section - Image & Slogan */}
       <div className="image md:flex w-1/2 bg-blue-600 text-white flex-col justify-center items-center p-8 bg-cover bg-center bg-no-repeat">
         <h1 className="text-3xl font-bold mt-6 text-center">
-          Your Space for Thoughts and Stories
+          Your Space For Thoughts And Stories
         </h1>
       </div>
 
@@ -23,7 +23,7 @@ const Register = () => {
               <input
                 type="text"
                 placeholder="Enter your full name"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
                 required
               />
             </div>
@@ -34,7 +34,7 @@ const Register = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
                 required
               />
             </div>
@@ -47,7 +47,7 @@ const Register = () => {
               <input
                 type="password"
                 placeholder="Enter your password"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
                 required
               />
             </div>
@@ -60,7 +60,7 @@ const Register = () => {
               <input
                 type="password"
                 placeholder="Confirm your password"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
                 required
               />
             </div>

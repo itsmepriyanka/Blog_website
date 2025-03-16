@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="color py-8 mt-20 ">
+    <footer className="color py-8 mt-20 z-50">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand Info */}
         <div>
@@ -16,23 +16,26 @@ const Footer = () => {
             <h3 className="font-bold secColor">Explore</h3>
             <ul className="mt-2 space-y-1">
               <li>
-                <a href="#" className="hover:text-purple-500 text-white">
+                <a href="blogs" className="hover:text-purple-500 text-white">
                   Blogs
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-purple-500 text-white">
+                <a href="/about" className="hover:text-purple-500 text-white">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-purple-500 text-white">
+                <a href="/contact" className="hover:text-purple-500 text-white">
                   Contact
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-purple-500 text-white">
-                  HR Consulting
+                <a
+                  href="/services"
+                  className="hover:text-purple-500 text-white"
+                >
+                  Service
                 </a>
               </li>
             </ul>

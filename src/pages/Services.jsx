@@ -1,4 +1,3 @@
-
 const Services = () => {
   const services = [
     {
@@ -24,19 +23,36 @@ const Services = () => {
     {
       title: "Monetization Consultation",
       description: "Learn how to monetize your blog using ads, affiliates, and sponsorships.",
-      icon: "/images/moneybag.png"
+      icon: "/images/moneybag.png"     
+    },
+   
+    {
+      title: "Guest Posting",
+      description:
+        "Expand your reach by getting published on high-authority blogs and websites.",
+      icon: "🌍",
+    },
+    {
+      title: "Social Media Marketing",
+      description:
+        "Promote your blogs on various platforms to increase traffic and engagement.",
+      icon: "📢",
+    },
+    {
+      title: "Monetization Consultation",
+      description:
+        "Learn how to monetize your blog using ads, affiliates, and sponsorships.",
+      icon: "💰",
     },
   ];
 
   return (
     <>
-    <div className=' py-24 color mx-auto '>
-             <div className='text-white text-center'>
-                <h1 className='text-5xl lg:text-7xl ledding-snug font-bold mb-5'> Services Page</h1>
-                
-          </div>
-    
-         </div>
+       <div className=" py-22 color mx-auto ">
+        <div className="text-white text-center">
+          <h1 className="text-5xl lg:text-7xl font-bold mb-4"> Services</h1>
+        </div>
+      </div>
 
     <div className="min-h-screen bg-gray-100 py-10 px-6">
      <div>
@@ -53,14 +69,15 @@ const Services = () => {
             key={index}
             className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
           >
-             <img src={service.icon} alt={service.title} className="w-16 h-16  mb-4" />
-            {/* <div className="text-4xl">{service.icon}</div> */}
+            <img src={service.icon} alt={service.title} className="w-16 h-16  mb-4" />
             <h2 className="text-xl font-semibold mt-4 text-gray-800">{service.title}</h2>
             <p className="text-gray-600 mt-2">{service.description}</p>
           </div>
         ))}
-      </div>
-    </div>
+      
+</div>
+</div>
+     
     </>
   );
 };
