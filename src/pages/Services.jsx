@@ -10,7 +10,7 @@ const Services = () => {
       title: "SEO Optimization",
       description:
         "Improve your site's ranking with keyword research, on-page SEO, and best practices.",
-      icon: "📈",
+      icon: "/images/graph.png",
     },
     {
       title: "Guest Posting",
@@ -58,6 +58,7 @@ const Services = () => {
               className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="text-4xl">{service.icon}</div>
+              <img src={service.icon} alt="" className="w-16 h-16 mb-4" />
               <h2 className="text-xl font-semibold mt-4 text-gray-800">
                 {service.title}
               </h2>
